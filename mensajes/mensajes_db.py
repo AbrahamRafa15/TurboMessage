@@ -22,7 +22,9 @@ def inicializar_bd():
                 asunto TEXT,
                 contenido TEXT,
                 fecha TEXT,
-                leido INTEGER DEFAULT 0
+                leido INTEGER DEFAULT 0,
+                eliminado_entrada INTEGER DEFAULT 0,
+                eliminado_salida INTEGER DEFAULT 0
               )
             """)
             conn.commit()
